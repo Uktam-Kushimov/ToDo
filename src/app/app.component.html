@@ -1,132 +1,5 @@
 <div class="wrapper ">
-  <div class="sidebar" data-color="purple" data-background-color="white" data-image="../assets/img/sidebar-1.jpg">
-    <!--
-      Tip 1: You can change the color of the sidebar using: data-color="purple | azure | green | orange | danger"
-
-      Tip 2: you can also add an image using data-image tag
-  -->
-    <div class="logo"><a href="http://www.creative-tim.com" class="simple-text logo-normal">
-        Creative Tim
-      </a></div>
-    <div class="sidebar-wrapper ps-container ps-theme-default" data-ps-id="22eac4b5-e21b-afe0-1c15-4403a4fcaabb">
-      <form class="navbar-form">
-        <span class="bmd-form-group">
-          <div class="input-group no-border">
-            <input type="text" value="" class="form-control" placeholder="Search...">
-            <button type="submit" class="btn btn-white btn-round btn-just-icon">
-              <i class="material-icons">search</i>
-              <div class="ripple-container"></div>
-            </button>
-          </div>
-        </span>
-      </form>
-      <ul class="nav navbar-nav nav-mobile-menu">
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:;">
-            <i class="material-icons">dashboard</i>
-            <p class="d-lg-none d-md-block">
-              Stats
-            </p>
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <i class="material-icons">notifications</i>
-            <span class="notification">5</span>
-            <p class="d-lg-none d-md-block">
-              Some Actions
-            </p>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Mike John responded to your email</a>
-            <a class="dropdown-item" href="#">You have 5 new tasks</a>
-            <a class="dropdown-item" href="#">You're now friend with Andrew</a>
-            <a class="dropdown-item" href="#">Another Notification</a>
-            <a class="dropdown-item" href="#">Another One</a>
-          </div>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true"
-            aria-expanded="false">
-            <i class="material-icons">person</i>
-            <p class="d-lg-none d-md-block">
-              Account
-            </p>
-          </a>
-          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-            <a class="dropdown-item" href="#">Profile</a>
-            <a class="dropdown-item" href="#">Settings</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Log out</a>
-          </div>
-        </li>
-      </ul>
-      <ul class="nav">
-        <li class="nav-item active  ">
-          <a class="nav-link" href="./dashboard.html">
-            <i class="material-icons">dashboard</i>
-            <p>Dashboard</p>
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="./user.html">
-            <i class="material-icons">person</i>
-            <p>User Profile</p>
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="./tables.html">
-            <i class="material-icons">content_paste</i>
-            <p>Table List</p>
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="./typography.html">
-            <i class="material-icons">library_books</i>
-            <p>Typography</p>
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="./icons.html">
-            <i class="material-icons">bubble_chart</i>
-            <p>Icons</p>
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="./map.html">
-            <i class="material-icons">location_ons</i>
-            <p>Maps</p>
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="./notifications.html">
-            <i class="material-icons">notifications</i>
-            <p>Notifications</p>
-          </a>
-        </li>
-        <li class="nav-item ">
-          <a class="nav-link" href="./rtl.html">
-            <i class="material-icons">language</i>
-            <p>RTL Support</p>
-          </a>
-        </li>
-        <li class="nav-item active-pro ">
-          <a class="nav-link" href="./upgrade.html">
-            <i class="material-icons">unarchive</i>
-            <p>Upgrade to PRO</p>
-          </a>
-        </li>
-      </ul>
-      <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
-        <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
-      </div>
-      <div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
-        <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
-      </div>
-    </div>
-    <div class="sidebar-background" style="background-image: url(../assets/img/sidebar-1.jpg) "></div>
-  </div>
+  <app-categories></app-categories>
   <div class="main-panel ps-container ps-theme-default" data-ps-id="ca5ed0fa-60da-a942-df30-623797d1629a">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
@@ -320,7 +193,8 @@
                     <g class="ct-labels">
                       <foreignObject style="overflow: visible;" x="40" y="125" width="22.189732142857142" height="20">
                         <span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
-                          style="width: 22px; height: 20px;">M</span></foreignObject>
+                          style="width: 22px; height: 20px;">M</span>
+                      </foreignObject>
                       <foreignObject style="overflow: visible;" x="62.18973214285714" y="125" width="22.189732142857142"
                         height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
                           style="width: 22px; height: 20px;">T</span></foreignObject>
@@ -339,7 +213,8 @@
                       </foreignObject>
                       <foreignObject style="overflow: visible;" x="173.13839285714286" y="125" width="30" height="20">
                         <span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
-                          style="width: 30px; height: 20px;">S</span></foreignObject>
+                          style="width: 30px; height: 20px;">S</span>
+                      </foreignObject>
                       <foreignObject style="overflow: visible;" y="96" x="0" height="24" width="30"><span
                           class="ct-label ct-vertical ct-start" xmlns="http://www.w3.org/2000/xmlns/"
                           style="height: 24px; width: 30px;">0</span></foreignObject>
@@ -421,34 +296,41 @@
                           style="width: 13px; height: 20px;">J</span></foreignObject>
                       <foreignObject style="overflow: visible;" x="52.52734375" y="125" width="12.52734375" height="20">
                         <span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
-                          style="width: 13px; height: 20px;">F</span></foreignObject>
+                          style="width: 13px; height: 20px;">F</span>
+                      </foreignObject>
                       <foreignObject style="overflow: visible;" x="65.0546875" y="125" width="12.52734375" height="20">
                         <span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
-                          style="width: 13px; height: 20px;">M</span></foreignObject>
+                          style="width: 13px; height: 20px;">M</span>
+                      </foreignObject>
                       <foreignObject style="overflow: visible;" x="77.58203125" y="125" width="12.52734375" height="20">
                         <span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
-                          style="width: 13px; height: 20px;">A</span></foreignObject>
+                          style="width: 13px; height: 20px;">A</span>
+                      </foreignObject>
                       <foreignObject style="overflow: visible;" x="90.109375" y="125" width="12.52734375" height="20">
                         <span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
-                          style="width: 13px; height: 20px;">M</span></foreignObject>
+                          style="width: 13px; height: 20px;">M</span>
+                      </foreignObject>
                       <foreignObject style="overflow: visible;" x="102.63671875" y="125" width="12.52734375"
                         height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
                           style="width: 13px; height: 20px;">J</span></foreignObject>
                       <foreignObject style="overflow: visible;" x="115.1640625" y="125" width="12.52734375" height="20">
                         <span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
-                          style="width: 13px; height: 20px;">J</span></foreignObject>
+                          style="width: 13px; height: 20px;">J</span>
+                      </foreignObject>
                       <foreignObject style="overflow: visible;" x="127.69140625" y="125" width="12.52734375"
                         height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
                           style="width: 13px; height: 20px;">A</span></foreignObject>
                       <foreignObject style="overflow: visible;" x="140.21875" y="125" width="12.52734375" height="20">
                         <span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
-                          style="width: 13px; height: 20px;">S</span></foreignObject>
+                          style="width: 13px; height: 20px;">S</span>
+                      </foreignObject>
                       <foreignObject style="overflow: visible;" x="152.74609375" y="125" width="12.52734375"
                         height="20"><span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
                           style="width: 13px; height: 20px;">O</span></foreignObject>
                       <foreignObject style="overflow: visible;" x="165.2734375" y="125" width="12.52734375" height="20">
                         <span class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
-                          style="width: 13px; height: 20px;">N</span></foreignObject>
+                          style="width: 13px; height: 20px;">N</span>
+                      </foreignObject>
                       <foreignObject style="overflow: visible;" x="177.80078125" y="125" width="30" height="20"><span
                           class="ct-label ct-horizontal ct-end" xmlns="http://www.w3.org/2000/xmlns/"
                           style="width: 30px; height: 20px;">D</span></foreignObject>

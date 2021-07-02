@@ -8,7 +8,7 @@
             Creative Tim
         </a></div>
     <div class="sidebar-wrapper ps-container ps-theme-default" data-ps-id="22eac4b5-e21b-afe0-1c15-4403a4fcaabb">
-        <form class="navbar-form">
+        <!-- <form class="navbar-form">
             <span class="bmd-form-group">
                 <div class="input-group no-border">
                     <input type="text" value="" class="form-control" placeholder="Search...">
@@ -18,8 +18,8 @@
                     </button>
                 </div>
             </span>
-        </form>
-        <ul class="nav navbar-nav nav-mobile-menu">
+        </form> -->
+        <!--<ul class="nav navbar-nav nav-mobile-menu">
             <li class="nav-item">
                 <a class="nav-link" href="javascript:;">
                     <i class="material-icons">dashboard</i>
@@ -60,15 +60,14 @@
                     <a class="dropdown-item" href="#">Log out</a>
                 </div>
             </li>
-        </ul>
+        </ul> -->
         <ul class="nav">
-            <li class="nav-item active  ">
-                <a class="nav-link" href="./dashboard.html">
-                    <i class="material-icons">dashboard</i>
-                    <p>Dashboard</p>
+            <li class="nav-item" *ngFor="let category of categories">
+                <a class="nav-link">
+                    <p>{{category.title}}</p>
                 </a>
             </li>
-            <li class="nav-item ">
+            <!-- <li class="nav-item ">
                 <a class="nav-link" href="./user.html">
                     <i class="material-icons">person</i>
                     <p>User Profile</p>
@@ -115,14 +114,14 @@
                     <i class="material-icons">unarchive</i>
                     <p>Upgrade to PRO</p>
                 </a>
-            </li>
+            </li> -->
         </ul>
-        <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
+        <!-- <div class="ps-scrollbar-x-rail" style="left: 0px; bottom: 0px;">
             <div class="ps-scrollbar-x" tabindex="0" style="left: 0px; width: 0px;"></div>
         </div>
         <div class="ps-scrollbar-y-rail" style="top: 0px; right: 0px;">
             <div class="ps-scrollbar-y" tabindex="0" style="top: 0px; height: 0px;"></div>
-        </div>
+        </div> -->
     </div>
-    <div class="sidebar-background" style="background-image: url(../assets/img/sidebar-1.jpg) "></div>
+    <!-- <div class="sidebar-background" style="background-image: url(../assets/img/sidebar-1.jpg) "></div> -->
 </div>

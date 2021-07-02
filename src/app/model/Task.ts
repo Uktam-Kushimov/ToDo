@@ -1,9 +1,6 @@
 import { Category } from "./Category";
 import { Priority } from "./Priority";
 
-import { Priority } from "./Priority";
-import { Category } from "./Category";
-
 export class Task {
     id: number;
     title: string;

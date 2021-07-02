@@ -2,7 +2,7 @@ import { Category } from '../model/Category';
 import { Priority } from '../model/Priority';
 import { Task } from '../model/Task';
 
-export class TestData [
+export class TestData {
     static categories: Category[] = [
         { id: 1, title: 'Работа' },
         { id: 2, title: 'Семья' },
@@ -32,7 +32,7 @@ export class TestData [
             priority: TestData.priorities[2],
             completed: false,
             category: TestData.categories[9],
-            date: new Date(value: '2019-04-10')
+            date: new Date('2019-04-10')
         },
         {
             id: 2,
@@ -40,7 +40,7 @@ export class TestData [
             priority: TestData.priorities[0],
             completed: false,
             category: TestData.categories[0],
-            date: new Date(value: '2019-04-11')
+            date: new Date('2019-04-11')
         },
         {
             id: 3,
@@ -55,8 +55,8 @@ export class TestData [
             priority: TestData.priorities[1],
             completed: false,
             category: TestData.categories[1],
-            date: new Date(value: '2019-08-17')
+            date: new Date('2019-08-17')
         }
     ]
-]
+}
 
