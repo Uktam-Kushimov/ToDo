@@ -6,22 +6,35 @@
         <table class="table table-hover">
             <thead class="text-warning">
                 <tr>
-                    <th>ID</th>
+                    <th>#</th>
                     <th>Название</th>
                     <th>Категории</th>
                     <th>Приоритет</th>
-                    <th>Статус</th>
                     <th>Дата</th>
+                    <th>Статус</th>
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let task of tasks">
-                    <td>{{task.id}}</td>
+                <tr *ngFor="let task of tasks; let i = index" [class.completed]="task.completed">
+                    <td>{{i+1}}</td>
                     <td>{{task.title}}</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td [class.novalue]="task.category == null">{{task.category !=null ? task.category.title: 'Без
+                        категорий'}}</td>
+                    <td [class.novalue]="task.category == null">{{task.priority !=null ? task.priority.title: 'Без
+                        приоритета'}}</td>
+                    <td [class.novalue]="task.category == null">{{task.date !=null ? (task.date | date: 'medium') : 'Без
+                        категорий'}}</td>
+                    <td>
+                        <div class="form-check">
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" value="" [checked]="task.completed"
+                                    (click)="toggleTaskCompleted(task)">
+                                <span class="form-check-sign">
+                                    <span class="check"></span>
+                                </span>
+                            </label>
+                        </div>
+                    </td>
                 </tr>
 
             </tbody>

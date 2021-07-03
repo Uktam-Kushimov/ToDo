@@ -46,7 +46,7 @@ export class TestData {
             id: 3,
             title: 'Убраться у себя в комнате, полить растения',
             priority: TestData.priorities[2],
-            completed: false,
+            completed: true,
             category: TestData.categories[1],
         },
         {
